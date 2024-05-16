@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --black: #000000;
+    --catalina: #06327d;
+    --bluetiful: #2b70e4;
+    --vegan: #209d5c;
+    --sunglow: #ffd034;
+    --white: #ffffff;
+    --lightblue: #cadbf8;
+    --mainfont: "Poppins", sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1.1667;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 1.1667;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 1.75rem;
+    line-height: 1.1667;
+}
+
+body {
+    font-family: Poppins, sanserif;
+    max-width: 1200px;
+    margin: 2rem auto;
+    background-color: var(--catalina);
+}
+
+header {
+    color: var(--white);
+    text-align: center;
+    align-content: center;
+
+}
+
+nav ul {
+    list-style: none;
+    color: white;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+
+}
+
+nav a {
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--white);
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--sunglow);
+}
+
+.hero {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 1rem;
+    background-color: var(--white);
+    border-bottom: .5rem solid #ffd034;
+    border-top: .5rem solid #ffd034;
+    margin: 0;
+
+}
+
+.respond {
+    max-width: 100%;
+    /* height: auto; */
+    grid-row: 1/2;
+    grid-row: 1/4;
+    align-self: center;
+    row-gap: 0;
+}
+
+.hero h2 {
+    grid-column: 2/3;
+}
+
+.hero p {
+    grid-column: 2/3;
+}
+
+.hero a {
+    font-size: 12px;
+    background-color: var(--vegan);
+    color: var(--white);
+    text-transform: uppercase;
+    padding: 0.1rem;
+    border-radius: 20%;
+    text-decoration: none;
+}
+
+.hero a:hover {
+    background-color: var(--sunglow);
+    color: var(--vegan)
+}
+
+footer {
+    align-content: center;
+    color: var(--white);
+    text-align: center;
+    padding: 4rem;
+}
+
+@media (min-width: 1000px) {
+    header {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        width: auto;
+        align-items: baseline;
+
+
+    }
+
+}

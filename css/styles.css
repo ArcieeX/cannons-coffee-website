@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Allura&family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Goldman:wght@400;700&family=Gravitas+One&family=Italianno&family=Kaushan+Script&family=Luxurious+Script&family=Miltonian+Tattoo&family=Pinyon+Script&family=Playball&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quintessential&family=Staatliches&family=Teko&family=Vujahday+Script&family=WindSong:wght@400;500&family=Yatra+One&family=Zeyada&display=swap");
+
+:root {
+    --catalina: #06327d;
+    --bluetiful: #2b70e4;
+    --vegan: #209d5c;
+    --sunglow: #ffd034;
+    --white: #ffffff;
+    --lightblue: #cadbf8;
+    --mainfont: "Poppins", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+body {
+    font-family: var(--mainfont);
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+
+.responsive {
+    max-width: 100%;
+    border-radius: .2rem;
+}
+
+header {
+    background-color: var(--catalina);
+    border-bottom: 1rem solid #ffd034;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    color: white;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    text-align: center;
+
+}
+
+nav a {
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--white);
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--sunglow);
+}
+
+.logo {
+    max-width: 100%;
+}
+
+h1 {
+    color: var(--white);
+    font-size: 3rem;
+    line-height: 1.1667;
+    text-transform: uppercase;
+
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: normal;
+    line-height: 1.667;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.75rem;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.hero-container {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    background-color: var(--white);
+    /* padding: 2rem;
+    border: solid white; */
+}
+
+.hero-container h2 {
+    grid-column: 2/3;
+}
+
+.hero-container p {
+    grid-column: 2/3;
+}
+
+.hero-container a {
+    font-size: 12px;
+    background-color: var(--vegan);
+    color: var(--white);
+    text-transform: uppercase;
+    padding: 1rem;
+    border-radius: 20%;
+    text-decoration: none;
+}
+
+.hero-container a:hover {
+    background-color: var(--sunglow);
+    color: var(--vegan)
+}
+
+.respond {
+    max-width: 100%;
+    height: auto;
+    grid-row: 1/2;
+    grid-row: 1/4;
+    align-self: center;
+    row-gap: 0;
+}
+
+.coffee-section {
+    background-color: #cadbf8;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+
+
+.coffee-section a {
+    background-color: #06327d;
+    color: #ffffff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: .2rem;
+    border-radius: 10%;
+}
+
+.coffee-section a:hover {
+    color: var(--sunglow)
+}
+
+footer {
+    border-top: 1rem solid #ffd034;
+    background-color: #06327d;
+    color: white;
+    text-align: center;
+    align-content: center;
+    margin: auto;
+    padding: 2rem;
+}
+
+@media (min-width: 650px) {
+    .hero-container {
+        padding: 0;
+        margin: 0;
+        row-gap: 0;
+        border: none;
+        /* gap: 1rem; */
+    }
+
+    .coffee-section {
+        row-gap: 0;
+
+    }
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 2rem;
+        margin: 2rem;
+    }
+
+    .respond {
+        max-width: 100%;
+        grid-row: 1/2;
+        grid-row: 1/4;
+        align-self: center;
+        margin-bottom: 0%;
+    }
+
+}
+
+@media (min-width: 1000px) {
+
+    body {
+        background-color: var(--catalina);
+
+    }
+
+    header {
+        width: auto;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+
+    }
+
+    .hero-container {
+        margin: auto;
+    }
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+
+
+
+
+}
