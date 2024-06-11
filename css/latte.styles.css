@@ -39,10 +39,11 @@ header {
     color: var(--white);
     text-align: center;
     align-content: center;
+   
 
 }
 
-nav ul {
+ ul {
     list-style: none;
     color: white;
     display: flex;
