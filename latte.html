@@ -4,36 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Latte Page</title>
-    <link href="index.html" rel="stylesheet">
-    <link href="css/latte.styles.css" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1><a href="index.html"><img src="img/logo-nav.png" alt="green coffee plant logo design" class="logo"></a> Cannons Coffee</h1>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="latte.html">Coffee</a></li>
-                        <li><a href="https://www.starbucks.com/">About</a></li>
-                        <li><a href="mailto:arciee.herrera@gmail.com">Contact</a></li>
-                    </ul>
-                </nav>
-                <button onclick="showHamburger()" class="burger">
-                    <i class="fa-fa bars"></i>
-                </button>
+        <header >
+            <h1><a href=""><img src="https://assets.codepen.io/296057/logo-nav.png" alt="green coffee plant design" class="logo" ></a> Cannons Coffee</h1>
+            <ul class="nav">
+                    <li class="navlink"><a href="index.html" class="">Home</a></li>
+                    <li class="navlink"><a href="latte.html">Coffee</a></li>
+                    <li class="navlink"><a href="https://www.starbucks.com/" target="_blank">About</a></li>
+                    <li class="navlink"><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <button onclick="showHamburger()" class="burger">
+            <i class="fa fa-bars"></i>
+            </button>
         </header>
-        <div class="hero" id="cafe-latte">
+        <div class="hero-cafe-latte" id="cafe-latte">
             <img src="img/latte.jpg" alt="a person making a cool design over a latte with frothed milk" class="respond">
             <h2>Cafe Latte</h2>
             <p>One shot of espresso coffee plus plenty of steamed milk. Choose skim milk, regular milk, or oat milk.</p>
             <p><a href="latte.html" target="_blank" class="button">order now</a></p>
         </div>
-        <footer>
+        <footer class="latte-footer">
             <img src="https://assets.codepen.io/296057/logo-footer.png" alt=" green coffee plant logo design" class="logo">
             <p>&copy; 2024 Cannons Coffee. All Rights Reserved.</p>
         </footer>
     </div>
+    <script src="js/custom.js"></script>
 </body>
 </html>

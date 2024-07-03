@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="contact-body">
+    <header>
+        <h1><a href=""><img src="https://assets.codepen.io/296057/logo-nav.png" alt="green coffee plant design" class="logo" ></a> Cannons Coffee</h1>
+         <ul class="nav">
+            <li class="navlink"><a href="index.html" class="">Home</a></li>
+            <li class="navlink"><a href="latte.html">Coffee</a></li>
+            <li class="navlink"><a href="https://www.starbucks.com/" target="_blank">About</a></li>
+            <li class="navlink"><a href="contact.html">Contact</a></li>
+         </ul>
+        <button onclick="showHamburger()" class="burger">
+            <i class="fa fa-bars"></i></button>
+    </header>
+   
+    <div class="contact-main">
+        <h2>We would love to hear from you!</h2>
+        <h3>Please fill out the form below and we will get back to you within 72 hours</h3>
+    </div>
+    
+    <form id="form">
+        <div class="user-info">
+            <h3>* required</h3>
+            <div class="box">
+                <label for="username">*Name:</label>
+                <input type="text" id="username" name="username" placeholder="ex: Arciee Gee" required>
+            </div>
+            <div class="box">
+                <label for="useremail">*Email:</label>
+                <input type="email" id="user-email" name="user-email" placeholder="name@email.com" required />
+            </div>
+        </div>
+        <fieldset class="help">
+            <legend>How can we help?</legend>
+            <div class="check">
+                <input type="checkbox" id="employment" name="employment">
+                <label for="employment">Employment</label></div>
+            <div class="check">
+                <input type="checkbox" id="wholesale" name="wholesale">
+                <label for="wholesale">Wholesale Coffee</label>
+            </div>
+            <div class="check">
+                <input type="checkbox" id="art-show" name="art-show">
+                <label for="art-show">Art Shows</label>
+            </div>    
+        </fieldset>
+        <label for="comment">Comment</label>
+        <input type="textarea" id="comment" name="comment" class="comment">
+        <div class="button">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+    <footer class="footer-contact">
+        <img src="https://assets.codepen.io/296057/logo-footer.png" alt=" green coffee plant logo design" class="logo">
+        <p>&copy; 2024 Cannons Coffee. All Rights Reserved.</p>
+    </footer>
+    <script src="js/custom.js"></script>
+
+
+</body>
+
+</html>
